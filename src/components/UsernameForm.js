@@ -6,8 +6,8 @@ class UsernameForm extends Component {
         this.state = {
             username: '',
         }
-    this.onSubmit = this.onSubmit.bind(this)
-    this.onChange = this.onChange.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
+        this.onChange = this.onChange.bind(this)
     }
     onSubmit(e) {
         e.preventDefault()
@@ -34,7 +34,6 @@ class UsernameForm extends Component {
             </div>
         )
     }
-
 }
 
 export default UsernameForm
