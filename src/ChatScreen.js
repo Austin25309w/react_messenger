@@ -122,15 +122,15 @@ class ChatScreen extends Component {
                         />
                     </aside>
                     <section style = {styles.chatListContainer}>
-                        <MessageList
-                            messages = {this.state.messages}
-                            style = {styles.chatList}
-                            />
-                            <TypingIndicator usersWhoAreTyping = { this.state.usersWhoAreTyping}/>
-                            <SendMessageForm 
-                            onSubmit = {this.sendMessage} 
-                            onChange = { this.sendTypingEvent}
-                            />
+                    <MessageList
+                        messages = {this.state.messages}
+                        style = {styles.chatList}
+                        />
+                        <TypingIndicator usersWhoAreTyping = { this.state.usersWhoAreTyping}/>
+                        <SendMessageForm 
+                        onSubmit = {this.sendMessage} 
+                        onChange = { this.sendTypingEvent}
+                        />
                     </section>
                 </div>
             </div>
