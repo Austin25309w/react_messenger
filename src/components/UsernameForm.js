@@ -6,11 +6,12 @@ class UsernameForm extends Component {
         this.state = {
             username: '',
         }
-        this.onSubmit = this.onSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
         this.onChange = this.onChange.bind(this)
     }
-    onSubmit(e) {
+    handleSubmit(e) {
         e.preventDefault()
+        console.log('here')
         this.props.onSubmit(this.state.username)
     }
     onChange(e){
@@ -22,7 +23,7 @@ class UsernameForm extends Component {
             <div>
                 <div>
                     <h2>What is your username</h2>
-                    <form onSubmit = {this.onSubmit}>
+                    <form onSubmit = {this.handleSubmit}>
                         <input
                             type = "text"
                             placeholder = "Your full name"

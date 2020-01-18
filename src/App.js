@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import UsernameForm from './components/UsernameForm';
 import ChatScreen from './ChatScreen'
@@ -35,13 +34,13 @@ class App extends Component {
   render(){
         // <h1>Massenger</h1>
         // <UsernameForm onSubmit={this.onUsernameSubmitted} />
-        // if (this.state.currentScreen === "WhatIsUsernameScreen"){
-          // return <UsernameForm onUsernameSubmitted={this.onUsernameSubmitted}/>
-        // }
+        if (this.state.currentScreen === "WhatIsUsernameScreen"){
+          return <UsernameForm onSubmit={this.onUsernameSubmitted}/>
+        }
 
-        // if (this.state.currentScreen === 'ChatScreen') {
+        if (this.state.currentScreen === 'ChatScreen') {
           return <ChatScreen currentUsername={this.state.currentUsername} />
-        // }
+        }
         // return <ChatScreen currentUsername={this.state.currentUsername}/>
     }
 }

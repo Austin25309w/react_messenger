@@ -18,7 +18,7 @@ app.post('/users', (req, res) => {
     const { username } =req.body
     chatkit
         .createUser({
-            id:username,
+            id: username,
             name: username
         })
         .then(() => res.sendStatus(201))
@@ -37,7 +37,6 @@ app.post('/authenticate', (req, res) => {
 })
 
 const PORT = 3001
-
 app.listen(PORT, err => {
     if(err) {
         console.log(err)

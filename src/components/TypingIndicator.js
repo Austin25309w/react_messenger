@@ -11,7 +11,7 @@ class TypingIndicator extends Component {
                 </div>
             )
         }
-        return<div />
+        return <div />
     }
 }
 
